@@ -1,0 +1,21 @@
+{
+    "name": "vl-anufriev/va-static-blocks",
+    "description": "CRUD for static blocks for yii2",
+    "type": "yii2-extension",
+    "keywords": ["static blocks"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vladimir Anufriev",
+            "email": "anufrievv.vvladimir@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "vl_anufriev\\static_blocks\\": ""
+        }
+    }
+}
