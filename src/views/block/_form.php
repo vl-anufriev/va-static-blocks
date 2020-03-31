@@ -23,7 +23,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'slug')->textInput(['maxlength' => true]) ?>
 
-    <?php echo $form->field($model, 'content')->widget(Imperavi::class, [
+    <?php echo $form->field($model, 'body')->widget(Imperavi::class, [
         'settings' => $settings,
     ]); ?>
 

@@ -30,6 +30,9 @@ class Block extends \yii\db\ActiveRecord
         return [
             [['body'], 'string'],
             [['title', 'slug'], 'string', 'max' => 255],
+            ['slug', 'match', 'pattern' => '/^[a-z]+$/',
+                'message' => 'Поле может содержать только латинские буквы'
+            ],
         ];
     }
 
