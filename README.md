@@ -28,4 +28,4 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-$ ./yii migrate/up --migrationPath=@vl_anufriev/va-static-blocks/migrations
+$ ./yii migrate/up --migrationPath=@vl_anufriev/va_static-blocks/migrations

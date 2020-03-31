@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "vl_anufriev\\static_blocks\\": ""
+            "vl_anufriev\\va_static_blocks\\": "src"
         }
     }
 }
