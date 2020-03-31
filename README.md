@@ -28,4 +28,4 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \vl_anufriev\static_blocks\AutoloadExample::widget(); ?>```
+$ ./yii migrate/up --migrationPath=@vl_anufriev/va-static-blocks/migrations
