@@ -23,6 +23,27 @@ class Block extends \yii\db\ActiveRecord
     }
 
     /**
+     * @param $slug
+     * @return array|string|Block|\yii\db\ActiveRecord|null
+     */
+    public static function getBlockBySlug($slug)
+    {
+        if (empty(trim($slug))) return '';
+        return Block::find()->where(['slug' => $slug])->one();
+    }
+
+    /**
+     * @param $id
+     * @return array|string|Block|\yii\db\ActiveRecord|null
+     */
+    public static function getBlockById($id)
+    {
+        if (empty(trim($id))) return '';
+        if (!is_numeric($id)) return '';
+        return Block::find()->where(['id' => $id])->one();
+    }
+
+    /**
      * {@inheritdoc}
      */
     public function rules()
